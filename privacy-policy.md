@@ -188,6 +188,10 @@ DNS, discovery, probes and iPerf can use unencrypted traffic. HTTPS/WSS protect 
 
 Android cloud backup is disabled (allowBackup=false). Some device-to-device transfers can still include local preferences under Android rules; Keystore keys are not transferred with those preferences. Disabling cloud backup does not prevent every possible Android transfer/restore.
 
+**Manual backup and restore**
+
+NOXYQ creates or opens a backup only when you start an export or restore and choose a file or destination through the Android system file picker (Storage Access Framework). Depending on your selection, a backup can contain local settings, saved diagnostics and history, and network identifiers such as Wi-Fi names, IP addresses and MAC addresses. NOXYQ encrypts full backups and backups containing History+ on your device using a password you choose. Password protection is optional for eligible settings-only backups. If you choose a cloud storage provider in the file picker, that provider may store or sync the file under its own privacy policy. NOXYQ does not automatically upload backup archives or send them to NOXYQ servers. Manage or delete exported copies through the storage provider you selected.
+
 The reviewed Production dependency graph includes Expo, React Native, Hermes and camera support libraries, but excludes barcode ML Kit, Google Play Services scanner and Google DataTransport runtime payloads. Expo OTA updates are disabled. NOXYQ has no integrated advertising or automatic first-party analytics/crash-upload service in this release. Optional measurement-provider transfers remain active only through their described user-selected flows.
 
 No internet-connected system can guarantee absolute security.
